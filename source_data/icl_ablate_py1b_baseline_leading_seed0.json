@@ -1,0 +1,28 @@
+{
+  "model_id": "EleutherAI/pythia-1b",
+  "tag": "py1b_baseline",
+  "ablation_type": "leading",
+  "seed": 0,
+  "target_layers": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "n_collapsed_layers": 12,
+  "baseline_zeroshot_nll": 2.823697090148926,
+  "baseline_icl_nll": 1.2119712829589844,
+  "ablated_zeroshot_nll": 7.18530797958374,
+  "ablated_icl_nll": 5.827700138092041,
+  "delta_zeroshot_pct": 154.4645459547071,
+  "delta_icl_pct": 380.8447378277743,
+  "icl_zeroshot_ratio": 2.4655802758740997
+}
