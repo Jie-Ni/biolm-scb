@@ -62,8 +62,9 @@ pip-log.txt
 Thumbs.db
 desktop.ini
 
-# ---------- Project-specific bulk data (not for git) ----------
-# v46 collection drop (kept locally; large + work-in-progress)
+# ---------- Excluded from public repo (kept on local disk) ----------
+paper/
+figures/
 data_v46_collected/
 
 # Old top-level tarballs and recovery scratch dirs
