@@ -1,0 +1,90 @@
+# =============================================================
+# biolm-scb — .gitignore
+# =============================================================
+
+# ---------- LaTeX intermediates ----------
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.idx
+*.ind
+*.ilg
+*.nav
+*.snm
+*.vrb
+
+# Keep these PDF artifacts (compiled paper outputs):
+#   paper/main.pdf, paper/supplementary.pdf, paper/cover_letter.pdf
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------- Virtualenv / pip ----------
+.venv/
+venv/
+env/
+ENV/
+pip-log.txt
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---------- Editor / IDE ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Project-specific bulk data (not for git) ----------
+# v46 collection drop (kept locally; large + work-in-progress)
+data_v46_collected/
+
+# Old top-level tarballs and recovery scratch dirs
+arxiv_submission_v*.tar.gz
+Bio-LM_paper_v*.pdf
+_veff_recovery/
+*_recovery/
+HANDOFF.md
+
+# Stray paths created by Windows command-line escaping accidents
+paper;C/
+
+# Model checkpoints / large binaries (defensive)
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.h5
+*.hdf5
+
+# Logs
+*.out.log
+slurm-*.out
